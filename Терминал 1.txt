@@ -1,0 +1,90 @@
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я
+
+pwd
+
+2) Создать папку
+
+mkdir foldername
+
+3) Зайти в папку
+
+cd foldername
+
+4) Создать 3 папки
+
+mkdir foldername_1 foldername_2 foldername_3 
+
+5) Зайти в любую папку
+
+cd foldername_1
+
+6) Создать 5 файлов (3 txt, 2 json)
+
+touch log1.txt log2.txt log3.txt log4.json log5.json
+
+7) Создать 3 папки
+
+mkdir foldername_4 foldername_5 foldername_6
+
+8. Вывести список содержимого папки
+
+ls -la
+
+9) + Открыть любой txt файл
+
+vim  log1.txt
+
+10) + написать туда что-нибудь, любой текст.
+
+i 
+text
+
+11) + сохранить и выйти.
+
+esc, :wq, enter 
+
+12) Выйти из папки на уровень выше
+
+cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+mv foldername_1/log1.txt foldername_1/log2.txt  foldername_2/
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+
+cp foldername_1/log4.json foldername_1/log5.json foldername_3/
+
+15) Найти файл по имени
+
+find - depth - name ‘log4.json’
+
+16) просмотреть содержимое в реальном времени 
+
+tail -f foldername_1/log1.txt
+
+17) вывести несколько первых строк из текстового файла
+
+head -5 foldername_1/log1.txt
+
+18) вывести несколько последних строк из текстового файла
+
+tail -5 foldername_1/log1.txt
+
+19) просмотреть содержимое длинного файла 
+
+less foldername_1/log1.txt
+
+20) вывести дату и время
+
+date
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+curl 'http://162.55.220.72:5005/terminal-hw-request' ->
+curl 'http://162.55.220.72:5005/get_method?name=Jane&age=26’
